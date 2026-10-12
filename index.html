@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#780000" />
+  <meta name="description" content="Mostafa Anwar — Senior Graphic Designer portfolio" />
+  <title>Mostafa Anwar — Graphic Designer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <!-- ========================= HERO ========================= -->
+    <section class="hero" id="home" aria-label="Mostafa Anwar portfolio introduction">
+      <canvas id="particleCanvas" class="fx-canvas particle-canvas" aria-hidden="true"></canvas>
+
+      <div class="ambient-light ambient-light--one" aria-hidden="true"></div>
+      <div class="ambient-light ambient-light--two" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="title-wrap hero-enter hero-enter--1">
+            <h1>Mostafa Anwar</h1>
+            <div class="role-row">
+              <span class="signature">Senior</span>
+              <span class="role">Graphic Designer</span>
+            </div>
+          </div>
+
+          <p class="hero-description hero-enter hero-enter--2">
+            Your Gateway to Turning Vision into Reality<br />
+            ,We help you reach your goals and shape<br />
+            your brand identity by designing and<br />
+            executing end-to-end advertising<br />
+            solutions with creativity.
+          </p>
+
+          <a class="hero-cta hero-enter hero-enter--3" href="#contact">
+            <span>Start ur Pro Now</span>
+          </a>
+        </div>
+
+        <div class="portrait-stage" id="portraitStage" aria-label="Interactive portrait reveal">
+          <!-- Exact transparent smoke artwork supplied by the user. It stays behind the portrait. -->
+          <img
+            class="hero-smoke-image"
+            src="assets/smoke-overlay.png"
+            alt=""
+            aria-hidden="true"
+            draggable="false"
+          />
+
+          <div class="portrait-visual">
+            <div class="portrait-halo" aria-hidden="true"></div>
+
+            <img
+              class="portrait portrait--base"
+              src="assets/portrait-normal.png"
+              alt="Mostafa Anwar"
+              draggable="false"
+              decoding="async"
+              fetchpriority="high"
+            />
+
+            <img
+              class="portrait portrait--reveal"
+              id="portraitReveal"
+              src="assets/portrait-reveal.png"
+              alt=""
+              aria-hidden="true"
+              draggable="false"
+              decoding="async"
+            />
+          </div>
+
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#contact" aria-label="Scroll to contact section"><span></span></a>
+      <div class="hero-bottom-blend" aria-hidden="true"></div>
+    </section>
+
+    <!-- ======================= CONTACT ======================== -->
+    <section class="contact-section" id="contact" aria-label="Contact Mostafa Anwar">
+      <canvas id="contactParticles" class="contact-canvas contact-particles" aria-hidden="true"></canvas>
+      <canvas id="spiderCanvas" class="contact-canvas spider-canvas" aria-hidden="true"></canvas>
+
+      <div class="contact-glow contact-glow--left" aria-hidden="true"></div>
+      <div class="contact-glow contact-glow--right" aria-hidden="true"></div>
+
+      <div class="contact-content reveal-on-scroll">
+        <span class="section-kicker">Let’s create something memorable</span>
+        <h2>Find me online</h2>
+        <p class="contact-lead">Move your mouse — the spider follows. Choose any platform and open it directly.</p>
+
+        <div class="social-grid" aria-label="Social links">
+          <a class="social-btn instagram" href="https://www.instagram.com/_2nwar_?mdxt=MTNveGQ2d3dwODhoaw%3D%3D" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i><span>Instagram</span>
+          </a>
+
+          <a class="social-btn behance" href="https://www.behance.net/mostafaanwar55" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-behance" aria-hidden="true"></i><span>Behance</span>
+          </a>
+
+          <a class="social-btn facebook" href="https://www.facebook.com/share/1CLFP1MKHM/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span>Facebook</span>
+          </a>
+
+          <a class="social-btn telegram" href="https://t.me/+201027003369" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-telegram" aria-hidden="true"></i><span>Telegram</span>
+          </a>
+
+          <a class="social-btn whatsapp" href="https://wa.me/201027003369" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="spider-hint" aria-hidden="true">
+          <span class="spider-dot"></span>
+          <span>Move / touch anywhere in this section</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
